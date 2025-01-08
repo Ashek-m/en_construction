@@ -12,6 +12,9 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+        .green{
+            color: #329F45;
+        }
 
         .custom-image {
             cursor: pointer;
@@ -54,23 +57,9 @@
         }
 
         
-.slide {
-    position: relative;
-    animation: slideFromTop 1s ease-out forwards; /* Apply the slide from top animation */
-}
 
-@keyframes slideFromTop {
-    0% {
-        transform: translateY(100%); /* Start the logo above the screen (off-screen) */
-        opacity: 0; /* Initially hidden */
-    }
-    100% {
-        transform: translateY(0); /* Move the logo to its original position */
-        opacity: 1; /* Fully visible */
-    }
-}
 .logo {
-    position: relative;
+    
     animation: slideFromBot 1s ease-out forwards; /* Apply the slide from top animation */
 }
 
@@ -85,6 +74,9 @@
     }
 }
 
+
+
+
     </style>
 </head>
 
@@ -92,7 +84,7 @@
 
     <!-- Navbar (Sticky) -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top logo">
-        <div class="container">
+        <div class="container ">
             <a class="navbar-brand" href="#">
                 <img src="Assets/images/logo-1.png" alt="Logo" class="logo" height="80px">
             </a>
@@ -103,7 +95,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item mx-3"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item mx-3"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item mx-3"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item mx-3"><a class="nav-link" href="#experience">Our Experienced Path</a></li>
                 </ul>
@@ -115,7 +107,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="container-fluid bg-dark text-white hero-section slide py-5">
+    <div class="container-fluid bg-dark text-white hero-section py-5 ">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
@@ -130,6 +122,36 @@
             </div>
         </div>
     </div>
+
+    <!-- about -->
+
+    <section class="about-us py-5 bg-white text-dark" id="about">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- About Image -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="Assets/images/3.png" alt="About Us" class="img-fluid rounded-circle shadow-lg">
+      </div>
+      <!-- About Content -->
+      <div class="col-md-6">
+        <h2 class="display-4 fw-bold mb-4">About Us</h2>
+        <p class="lead mb-4">
+        A Legacy Since 2004, For over two decades, we have proudly turned dreams into reality by crafting exquisite homes for clients who trust us with their vision Our extensive portfolio showcases numerous successful projects, blending innovative design with seamless build processes to deliver exceptional results.
+        </p>
+        <ul class="list-unstyled mb-4">
+          <li><i class="bi bi-check-circle-fill"></i> Proven Expertise in Design and Construction</li>
+          <li><i class="bi bi-check-circle-fill"></i> Commitment to Uncompromising Quality</li>
+          <li><i class="bi bi-check-circle-fill"></i> Innovation in Design and Construction Techniques</li>
+          <li><i class="bi bi-check-circle-fill"></i> Client-centric approach</li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
     <!-- counters -->
      <div class="bg-black">
     <div class="container py-5  text-white rounded-3 shadow-lg">
@@ -167,7 +189,7 @@
 
 
     <!-- Services Section -->
-    <div class="container py-3  " id="services">
+    <div class="container py-5  " id="services">
         <div class="text-center">
             <h6 class="text-danger fw-bold">OUR SERVICES</h6>
             <h2 class="fw-bold">What We Do ?</h2>
@@ -283,15 +305,58 @@
             </div>
 
             <div class="row g-3">
+                <!-- First Carousel -->
                 <div class="col-md-6">
-                    <div class="bg-success rounded overflow-hidden">
+                    <div class="bg-dark rounded overflow-hidden">
                         <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="Assets/images/400x711/1.png" class="d-block w-100 custom-image project-img" alt="Project 1">
+                                    <img src="Assets/projects/1.png" class="d-block w-100 img-fluid" alt="Project 1" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Fairlands Residential Apartment</h5>
+                                    </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="Assets/images/400x711/2.png" class="d-block w-100 custom-image project-img" alt="Project 2">
+                                    <img src="Assets/projects/2.png" class="d-block w-100 img-fluid" alt="Project 2" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Fairlands Residential Apartment</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/projects/5.png" class="d-block w-100 img-fluid" alt="Project 5" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Steel structure -Dharmapuri roller flour mills </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/projects/6.png" class="d-block w-100 img-fluid" alt="Project 6" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Steel structure -Dharmapuri roller flour mills </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/projects/7.png" class="d-block w-100 img-fluid" alt="Project 6" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Steel structure -Dharmapuri roller flour mills </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/projects/8.png" class="d-block w-100 img-fluid" alt="Project 6" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Individual house- Kallakuruchi  </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/projects/13.png" class="d-block w-100 img-fluid" alt="Project 6" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Individual residential buildings </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/projects/14.png" class="d-block w-100 img-fluid" alt="Project 6" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Individual residential buildings </h5>
+                                    </div>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
@@ -306,15 +371,46 @@
                     </div>
                 </div>
 
+                <!-- Second Carousel -->
                 <div class="col-md-6">
-                    <div class="bg-success rounded overflow-hidden">
+                    <div class="bg-dark rounded overflow-hidden">
                         <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="Assets/images/400x711/3.png" class="d-block w-100 custom-image project-img" alt="Project 3">
+                                    <img src="Assets/projects/3.png" class="d-block w-100 img-fluid" alt="Project 3" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Steel structure -Dharmapuri roller flour mills </h5>
+                                    </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="Assets/images/400x711/4.png" class="d-block w-100 custom-image project-img" alt="Project 4">
+                                    <img src="Assets/projects/4.png" class="d-block w-100 img-fluid" alt="Project 4" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Steel structure -Dharmapuri roller flour mills </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/projects/9.png" class="d-block w-100 img-fluid" alt="Project 9" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Residential Apartment salem</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/projects/10.png" class="d-block w-100 img-fluid" alt="Project 10" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Demolishing & plot leveling work in saravanabhavan projects</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/projects/11.png" class="d-block w-100 img-fluid" alt="Project 10" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Demolishing & plot leveling work in saravanabhavan projects</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/projects/11.png" class="d-block w-100 img-fluid" alt="Project 10" style="max-height: 720px;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                                        <h5>Demolishing & plot leveling work in saravanabhavan projects</h5>
+                                    </div>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
@@ -332,6 +428,7 @@
         </div>
     </div>
 
+
     <!-- Why Choose Us -->
     <div class="container py-5">
         <div class="row align-items-center">
@@ -340,12 +437,13 @@
             </div>
             <div class="col-md-6">
                 <h2 class="fw-bold">Why Choose Us?</h2>
-                <p>Choose us for quality construction, timely delivery, innovative designs, skilled craftsmanship, and unwavering commitment to client satisfaction.</p>
-                <ul class="list-group border-0">
+                <p class="green">We are the friendly & respectfull organisation. We provide budget friendly houses & building with 100% Quality Assurance.</p>
+                <p class="green">We link your thoughts with our trending & innovative ideas.</p>
+                <!-- <ul class="list-group border-0">
                     <li class="list-group-item border-0 ps-0"><strong>Expert Craftsmanship</strong> – Skilled professionals delivering exceptional quality in every project.</li>
                     <li class="list-group-item border-0 ps-0"><strong>Timely Completion</strong> – Commitment to completing projects on schedule without compromising quality.</li>
                     <li class="list-group-item border-0 ps-0"><strong>Innovative Designs</strong> – Creative solutions tailored to meet modern and functional architectural needs.</li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </div>
@@ -398,6 +496,51 @@
             </div>
         </div>
     </div>
+
+
+    <!-- keywords -->
+    <section class="container my-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-black">Keywords</h2>
+      <p class="text-muted">Explore our wide range of services in construction and interior design</p>
+    </div>
+
+    <div class="row g-5">
+      <!-- Construction Keywords -->
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                <i class="bi bi-building fs-4"></i>
+              </div>
+              <h4 class="ms-3 mb-0 text-success">Construction Services</h4>
+            </div>
+            <p class="card-text mt-3">
+              Building Construction, Contractors, Builders, Construction Company, Residential Apartment Construction, Remodeling, House Alterations, Building Alterations, Construction Management, General Contractors, Construction Worker, Construction Materials, Construction Site, Building Contractor, New Construction, House Building, Construction Consulting, Commercial Projects, Building Projects, Residential Construction, Steel Structure, Steel Building, Steel Construction, 2D Planning, 3D Elevation, 3D Design, Commercial Complex, Commercial Structure.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interior Keywords -->
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                <i class="bi bi-house-door fs-4"></i>
+              </div>
+              <h4 class="ms-3 mb-0 text-success">Interior Services</h4>
+            </div>
+            <p class="card-text mt-3">
+              Interior Design, Interior Decoration, Modular Kitchen, Cupboard Design, Wardrobe Design, Kitchen Basket, Tandem Box, Inside Decorating.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- Footer -->
     <footer class="bg-black text-light py-2">
