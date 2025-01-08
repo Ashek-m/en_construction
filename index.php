@@ -53,29 +53,48 @@
             object-fit: cover;
         }
 
-        @media (max-width: 576px) {
-        .hero-section {
-            padding-top: 40px;
-            padding-bottom: 40px; /* Adjust height for mobile */
-        }
         
-    }
-    @media (min-width: 768px) and (max-width: 991px) {
-        .hero-section {
-            padding-top: 40px;
-            padding-bottom: 40px; /* Adjust height for mobile */
-        }
+.slide {
+    position: relative;
+    animation: slideFromTop 1s ease-out forwards; /* Apply the slide from top animation */
 }
+
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(100%); /* Start the logo above the screen (off-screen) */
+        opacity: 0; /* Initially hidden */
+    }
+    100% {
+        transform: translateY(0); /* Move the logo to its original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+.logo {
+    position: relative;
+    animation: slideFromBot 1s ease-out forwards; /* Apply the slide from top animation */
+}
+
+@keyframes slideFromBot {
+    0% {
+        transform: translateY(-100%); /* Start the logo above the screen (off-screen) */
+        opacity: 0; /* Initially hidden */
+    }
+    100% {
+        transform: translateY(0); /* Move the logo to its original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
     </style>
 </head>
 
 <body>
 
     <!-- Navbar (Sticky) -->
-    <nav class="navbar navbar-expand-lg bg-light shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top logo">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="Assets/images/logo-1.png" alt="Logo" height="80px">
+                <img src="Assets/images/logo-1.png" alt="Logo" class="logo" height="80px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,7 +115,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="container-fluid bg-dark text-white hero-section">
+    <div class="container-fluid bg-dark text-white hero-section slide py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
@@ -105,15 +124,50 @@
                         with skilled and dedicated teams
                     </p>
                 </div>
-                <div class="col-lg-6 text-end d-none d-lg-block">
+                <div class="col-lg-6 text-center d-none d-lg-block">
                     <img src="Assets/images/2.png" class="img-fluid hero-image" alt="Hero Image">
                 </div>
             </div>
         </div>
     </div>
+    <!-- counters -->
+     <div class="bg-black">
+    <div class="container py-5  text-white rounded-3 shadow-lg">
+    <div class="row align-items-center text-center">
+        <!-- Counter 1: Projects Completed -->
+        <div class="col-md-3 mb-4 mb-md-0">
+            <div class="counter-box">
+                <div class="counter fs-2 fw-bold" id="counter1">0</div>
+                <h5>Projects Completed</h5>
+            </div>
+        </div>
+        <!-- Counter 2: Years of Experience -->
+        <div class="col-md-3 mb-4 mb-md-0">
+            <div class="counter-box">
+                <div class="counter fs-2 fw-bold" id="counter2">0</div>
+                <h5>Years of Experience</h5>
+            </div>
+        </div>
+        <!-- Counter 3: Satisfied Clients -->
+        <div class="col-md-3 mb-4 mb-md-0">
+            <div class="counter-box">
+                <div class="counter fs-2 fw-bold" id="counter3">0</div>
+                <h5>Satisfied Clients</h5>
+            </div>
+        </div>
+        <!-- Counter 4: Buildings Constructed -->
+        <div class="col-md-3 mb-4 mb-md-0">
+            <div class="counter-box">
+                <div class="counter fs-2 fw-bold" id="counter4">0</div>
+                <h5>Buildings Constructed</h5>
+            </div>
+        </div>
+    </div>
+</div></div>
+
 
     <!-- Services Section -->
-    <div class="container py-5" id="services">
+    <div class="container py-3  " id="services">
         <div class="text-center">
             <h6 class="text-danger fw-bold">OUR SERVICES</h6>
             <h2 class="fw-bold">What We Do ?</h2>
@@ -216,6 +270,9 @@
             </div>
         </div>
     </div>
+
+    
+
 
     <!-- Projects Section -->
     <div class="bg-dark" id="experience">
@@ -367,8 +424,30 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="bootstrap/js/bootstrap.js" async></script>
+    <script>
+    // Counter animation function
+    function animateCounter(counterId, targetValue, duration) {
+        let counter = $(counterId);
+        $({ countNum: 0 }).animate({ countNum: targetValue }, {
+            duration: duration,
+            easing: 'swing',
+            step: function () {
+                counter.text(Math.floor(this.countNum));
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        // Set target values and duration for each counter
+        animateCounter('#counter1', 150, 2000);  // Projects Completed
+        animateCounter('#counter2', 25, 3000);   // Years of Experience
+        animateCounter('#counter3', 1200, 2500);  // Satisfied Clients
+        animateCounter('#counter4', 200, 3500);   // Buildings Constructed
+    });
+</script>
+
 </body>
 
 </html>
