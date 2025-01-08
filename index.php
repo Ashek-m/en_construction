@@ -52,6 +52,20 @@
             height: 100%;
             object-fit: cover;
         }
+
+        @media (max-width: 576px) {
+        .hero-section {
+            padding-top: 40px;
+            padding-bottom: 40px; /* Adjust height for mobile */
+        }
+        
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        .hero-section {
+            padding-top: 40px;
+            padding-bottom: 40px; /* Adjust height for mobile */
+        }
+}
     </style>
 </head>
 
@@ -354,7 +368,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async></script>
+    <script src="bootstrap/js/bootstrap.js" async></script>
 </body>
 
 </html>
