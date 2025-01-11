@@ -17,6 +17,9 @@
             text-align: justify;
             display: block;
         }
+        span1{
+            font-size: 13px;
+        }
 
         
 
@@ -823,7 +826,8 @@
             <div class="row">
                 <div class="col-md-6 mb-4">
                 <h6 class="fw-bold">Name</h6>
-                <p>Er. R. Balaramanan</p>
+                <p>Er. R. Balaramanan <br><span1>(Managing Director)</span1></p>
+               
                     <h6 class="fw-bold">Office</h6>
                     <p>SN Complex, Govindhasamy nagar, Near old bus stand,<br>Salem- 636015</p>
                     <h6 class="fw-bold">Email</h6>
