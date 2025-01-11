@@ -12,6 +12,13 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+        .text-justify-custom {
+            text-align: justify;
+            display: block;
+        }
+
+        
+
         .green{
             color: #329F45;
         }
@@ -30,7 +37,7 @@
 
         .carousel-inner {
             width: 100%;
-            height: calc(100vw * 16 / 9);
+            height: auto;
             max-height: 711px;
         }
 
@@ -99,22 +106,25 @@
                     <li class="nav-item mx-3"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item mx-3"><a class="nav-link" href="#experience">Our Experienced Path</a></li>
                 </ul>
-                <form class="d-flex">
+                <!-- <form class="d-flex">
                     <a href="tel:+918940104441" class="btn btn-success">Contact Us</a>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="container-fluid bg-dark text-white hero-section py-5 ">
+    <div class="container-fluid bg-dark text-white hero-section  ">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <h1 class="display-4 hero-text">We Bring<br><span>Trending Concept</span> To Reality</h1>
-                    <p class="mt-3"><b class="text-green">100% Assured Quality</b> on Building & Our Services<br>
+                    <p class="mt-3"><b class="text-green">100% Assured Quality</b> on Buildings & Our Services<br>
                         with skilled and dedicated teams
                     </p>
+                    <form class="d-flex">
+                    <a href="tel:+918940104441" class="btn btn-light">Contact Us</a>
+                </form>
                 </div>
                 <div class="col-lg-6 text-center d-none d-lg-block">
                     <img src="Assets/images/2.png" class="img-fluid hero-image" alt="Hero Image">
@@ -136,7 +146,8 @@
       <div class="col-md-6">
         <h2 class="display-4 fw-bold mb-4">About Us</h2>
         <p class="lead mb-4">
-        A Legacy Since 2004, For over two decades, we have proudly turned dreams into reality by crafting exquisite homes for clients who trust us with their vision Our extensive portfolio showcases numerous successful projects, blending innovative design with seamless build processes to deliver exceptional results.
+        With a legacy dating back to 2004, we have spent over two decades turning dreams into reality by creating beautiful homes for clients who trust us with their vision.<br>
+        Our extensive portfolio highlights numerous successful projects, combining innovative design with seamless construction to deliver exceptional results.
         </p>
         <ul class="list-unstyled mb-4">
           <li><i class="bi bi-check-circle-fill"></i> Proven Expertise in Design and Construction</li>
@@ -152,46 +163,11 @@
 
 
 
-    <!-- counters -->
-     <div class="bg-black">
-    <div class="container py-5  text-white rounded-3 shadow-lg">
-    <div class="row align-items-center text-center">
-        <!-- Counter 1: Projects Completed -->
-        <div class="col-md-3 mb-4 mb-md-0">
-            <div class="counter-box">
-                <div class="counter fs-2 fw-bold" id="counter1">0</div>
-                <h5>Projects Completed</h5>
-            </div>
-        </div>
-        <!-- Counter 2: Years of Experience -->
-        <div class="col-md-3 mb-4 mb-md-0">
-            <div class="counter-box">
-                <div class="counter fs-2 fw-bold" id="counter2">0</div>
-                <h5>Years of Experience</h5>
-            </div>
-        </div>
-        <!-- Counter 3: Satisfied Clients -->
-        <div class="col-md-3 mb-4 mb-md-0">
-            <div class="counter-box">
-                <div class="counter fs-2 fw-bold" id="counter3">0</div>
-                <h5>Satisfied Clients</h5>
-            </div>
-        </div>
-        <!-- Counter 4: Buildings Constructed -->
-        <div class="col-md-3 mb-4 mb-md-0">
-            <div class="counter-box">
-                <div class="counter fs-2 fw-bold" id="counter4">0</div>
-                <h5>Buildings Constructed</h5>
-            </div>
-        </div>
-    </div>
-</div></div>
-
 
     <!-- Services Section -->
     <div class="container py-5  " id="services">
         <div class="text-center">
-            <h6 class="text-danger fw-bold">OUR SERVICES</h6>
+            <h6 class="text-green fs-5 fw-bold">OUR SERVICES</h6>
             <h2 class="fw-bold">What We Do ?</h2>
         </div>
 
@@ -300,131 +276,523 @@
     <div class="bg-dark" id="experience">
         <div class="container py-5">
             <div class="text-center mb-4">
-                <h6 class="text-uppercase text-danger fw-bold">Our Experienced Path</h6>
+                <h6 class="text-uppercase text-green fs-5 fw-bold">Our Experienced Path</h6>
                 <h2 class="fw-bold text-white">What We Build?</h2>
             </div>
 
-            <div class="row g-3">
-                <!-- First Carousel -->
-                <div class="col-md-6">
-                    <div class="bg-dark rounded overflow-hidden">
-                        <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Assets/projects/1.png" class="d-block w-100 img-fluid" alt="Project 1" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Fairlands Residential Apartment</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/2.png" class="d-block w-100 img-fluid" alt="Project 2" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Fairlands Residential Apartment</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/5.png" class="d-block w-100 img-fluid" alt="Project 5" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Steel structure -Dharmapuri roller flour mills </h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/6.png" class="d-block w-100 img-fluid" alt="Project 6" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Steel structure -Dharmapuri roller flour mills </h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/7.png" class="d-block w-100 img-fluid" alt="Project 6" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Steel structure -Dharmapuri roller flour mills </h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/8.png" class="d-block w-100 img-fluid" alt="Project 6" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Individual house- Kallakuruchi  </h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/13.png" class="d-block w-100 img-fluid" alt="Project 6" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Individual residential buildings </h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/14.png" class="d-block w-100 img-fluid" alt="Project 6" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Individual residential buildings </h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Second Carousel -->
-                <div class="col-md-6">
-                    <div class="bg-dark rounded overflow-hidden">
-                        <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Assets/projects/3.png" class="d-block w-100 img-fluid" alt="Project 3" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Steel structure -Dharmapuri roller flour mills </h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/4.png" class="d-block w-100 img-fluid" alt="Project 4" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Steel structure -Dharmapuri roller flour mills </h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/9.png" class="d-block w-100 img-fluid" alt="Project 9" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Residential Apartment salem</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/10.png" class="d-block w-100 img-fluid" alt="Project 10" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Demolishing & plot leveling work in saravanabhavan projects</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/11.png" class="d-block w-100 img-fluid" alt="Project 10" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Demolishing & plot leveling work in saravanabhavan projects</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/projects/11.png" class="d-block w-100 img-fluid" alt="Project 10" style="max-height: 720px;">
-                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
-                                        <h5>Demolishing & plot leveling work in saravanabhavan projects</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
+            <div class="container mt-5">
+    <!-- Image Cards -->
+    <div class="row justify-content-center">
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal1">
+                <img src="Assets/projects/13.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal2">
+                <img src="Assets/projects/14.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal3">
+                <img src="Assets/projects/15.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal4">
+                <img src="Assets/projects/8.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <p class="card-text fw-bold">Individual House - Kallakurichi</p>
                 </div>
             </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal5">
+                <img src="Assets/projects/2.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <p class="card-text fw-bold">Fairlands Residential Apartment - Salem</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal6">
+                <img src="Assets/projects/16.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal7">
+                <img src="Assets/projects/17.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal8">
+                <img src="Assets/projects/18.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal9">
+                <img src="Assets/projects/4.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <p class="card-text fw-bold">Steel Structure - Dharmapuri Roller Flour Mills</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal10">
+                <img src="Assets/projects/9.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <p class="card-text fw-bold">Residential Apartment - Salem</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal11">
+                <img src="Assets/projects/19.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal12">
+                <img src="Assets/projects/20.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal13">
+                <img src="Assets/projects/21.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal14">
+                <img src="Assets/projects/24.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <p class="card-text fw-bold">Individual Residential Buildings - Salem</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal15">
+                <img src="Assets/projects/12.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <p class="card-text fw-bold">Demolishing & Plot Leveling Work - </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal16">
+                <img src="Assets/projects/22.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal17">
+                <img src="Assets/projects/23.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+               
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal18">
+                <img src="Assets/projects/26.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <p class="card-text fw-bold">Interiors</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="carouselModal1" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/13.jpg" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="carouselModal2" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/14.jpg" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="carouselModal3" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/15.jpg" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="carouselModal4" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/8.png" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal with Carousel -->
+<div class="modal fade" id="carouselModal5" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="carouselModalLabel">Project Gallery</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Assets/projects/1.png" class="d-block w-100 img-fluid" alt="Project 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/projects/2.png" class="d-block w-100 img-fluid" alt="Project 2">
+                        </div>
+                        <!-- <div class="carousel-item">
+                            <img src="Assets/projects/3.png" class="d-block w-100 img-fluid" alt="Project 3">
+                        </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="carouselModal6" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/16.jpg" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div><!-- Modal -->
+<div class="modal fade" id="carouselModal7" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/17.jpg" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div><!-- Modal -->
+<div class="modal fade" id="carouselModal8" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/18.jpg" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal with Carousel -->
+<div class="modal fade" id="carouselModal9" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="carouselModalLabel">Project Gallery</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Assets/projects/3.png" class="d-block w-100 img-fluid" alt="Project 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/projects/4.png" class="d-block w-100 img-fluid" alt="Project 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/projects/5.png" class="d-block w-100 img-fluid" alt="Project 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/projects/6.png" class="d-block w-100 img-fluid" alt="Project 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/projects/7.png" class="d-block w-100 img-fluid" alt="Project 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="carouselModal10" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/9.png" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="carouselModal11" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/19.jpg" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="carouselModal12" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/20.png" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="carouselModal13" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/21.png" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal with Carousel -->
+<div class="modal fade" id="carouselModal14" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="carouselModalLabel">Project Gallery</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <img src="Assets/projects/24.png" class="img-fluid" alt="Project 1">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/projects/25.png" class="img-fluid" alt="Project 2">
+            </div>
+            <!-- Additional carousel items can be uncommented as needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal with Carousel -->
+<div class="modal fade" id="carouselModal15" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="carouselModalLabel">Project Gallery</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <img src="Assets/projects/10.png" class="img-fluid" alt="Project 1">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/projects/11.png" class="img-fluid" alt="Project 2">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/projects/12.png" class="img-fluid" alt="Project 2">
+            </div>
+            <!-- Additional carousel items can be uncommented as needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="carouselModal16" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/22.jpg" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="carouselModal17" tabindex="-1" aria-labelledby="carouselModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel1">Project Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/projects/23.jpg" class="img-fluid rounded" alt="Project Image" style="width: 100%; height: auto; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal with Carousel -->
+<div class="modal fade" id="carouselModal18" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="carouselModalLabel">Project Gallery</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <img src="Assets/projects/26.png" class="img-fluid" alt="Project 1">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/projects/27.png" class="img-fluid" alt="Project 2">
+            </div>
+            
+            <!-- Additional carousel items can be uncommented as needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
         </div>
     </div>
 
@@ -453,16 +821,19 @@
         <div class="container py-5 text-white">
             <div class="row">
                 <div class="col-md-6 mb-4">
+                <h6 class="fw-bold">Name</h6>
+                <p>Er. R. Balaramanan</p>
                     <h6 class="fw-bold">Office</h6>
                     <p>SN Complex, Govindhasamy nagar, Near old bus stand,<br>Salem- 636015</p>
                     <h6 class="fw-bold">Email</h6>
-                    <a href="mailto:welcome@everhomesconstruction.com" class="link-light text-decoration-none">welcome@everhomesconstruction.com</a>
+                    <p><a href="mailto:welcome@everhomesconstruction.com" class="link-light text-decoration-none">welcome@everhomesconstruction.com</a></p>
                     <h6 class="fw-bold">Phone</h6>
-                    <a href="tel:+918940104441" class="link-light text-decoration-none">+91 89401 04441</a>
+                    <a href="tel:+918940104441" class="link-light text-decoration-none">+91 89401 04441,</a>
+                    <a href="tel:+918015223441" class="link-light text-decoration-none">+91 80152 23441</a>
                 </div>
 
                 <div class="col-md-6">
-                    <form action="send_message.php" method="POST">
+                    <form action="#" method="POST">
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Full Name" required>
                         </div>
@@ -500,10 +871,10 @@
 
     <!-- keywords -->
     <section class="container my-5">
-    <div class="text-center mb-5">
+    <!-- <div class="text-center mb-5">
       <h2 class="fw-bold text-black">Keywords</h2>
       <p class="text-muted">Explore our wide range of services in construction and interior design</p>
-    </div>
+    </div> -->
 
     <div class="row g-5">
       <!-- Construction Keywords -->
@@ -516,8 +887,8 @@
               </div>
               <h4 class="ms-3 mb-0 text-success">Construction Services</h4>
             </div>
-            <p class="card-text mt-3">
-              Building Construction, Contractors, Builders, Construction Company, Residential Apartment Construction, Remodeling, House Alterations, Building Alterations, Construction Management, General Contractors, Construction Worker, Construction Materials, Construction Site, Building Contractor, New Construction, House Building, Construction Consulting, Commercial Projects, Building Projects, Residential Construction, Steel Structure, Steel Building, Steel Construction, 2D Planning, 3D Elevation, 3D Design, Commercial Complex, Commercial Structure.
+            <p class="card-text mt-3 text-justify-custom">
+              Building Construction, Contractors, Builders, Construction Company, Residential Apartment Construction, Remodeling, House Alterations, Building Alterations, Construction Management, General Contractors, Construction Worker, Construction Materials, Construction Site, Building Contractor, New Construction, House Building, Construction Consulting, Commercial Projects, Building Projects, Residential Construction, Steel Structure, Steel Building, Steel Construction, 2D Planning, 3D Elevation, 3D Design, Commercial Complex, Commercial Structure, Construction in salem, Builders in salem, Building contraction in salem, Building consulting in salem.
             </p>
           </div>
         </div>
@@ -533,7 +904,7 @@
               </div>
               <h4 class="ms-3 mb-0 text-success">Interior Services</h4>
             </div>
-            <p class="card-text mt-3">
+            <p class="card-text mt-3 text-justify-custom">
               Interior Design, Interior Decoration, Modular Kitchen, Cupboard Design, Wardrobe Design, Kitchen Basket, Tandem Box, Inside Decorating.
             </p>
           </div>
@@ -546,7 +917,11 @@
     <footer class="bg-black text-light py-2">
         <div class="container">
             <div class="row justify-content-between align-items-center border-top border-bottom py-3" style="border-color: #006400;">
-                <div class="col-md-4 text-center mb-3 mb-md-0">
+                
+                <div class="col-md-5 text-center text-md-end">
+                    <span>Everhomes's Construction © 2025. All rights reserved.</span>
+                </div>
+                <div class="col-md-3 text-center mb-3 mb-md-0">
                     <span class="fw-bold">Find us on :</span>
                     <a href="mailto:welcome@everhomesconstruction.com" class="text-light ms-4">
                         <i class="bi bi-envelope-fill" style="font-size: 1.5rem;"></i>
@@ -557,9 +932,6 @@
                     <a href="#" class="text-light ms-3">
                         <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
                     </a>
-                </div>
-                <div class="col-md-4 text-center text-md-end">
-                    <span>Builder 2025 ©, All rights reserved.</span>
                 </div>
                 <div class="col-md-4 text-center">
                     <span>Created by : <a target="_blank" href="https://hfadigitalcreations.com" class="text-light text-decoration-none">hfadigitalcreations.com</a></span>
