@@ -10,6 +10,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <title>Home</title>
     <style>
+    /* Basic styling for the table */
+    table {
+      width: 100%;
+      /* border-spacing: 32px 5px; */
+      border-collapse: separate;
+      /* margin: 20px 0; */
+    }
+
+    /* table, td {
+      border: 1px solid #000;
+    } */
+
+    td {
+      padding: 5px;
+      text-align: left;
+    }
+    
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      td {
+        display: block;
+        width: 100%;
+        /* box-sizing: border-box; */
+      }
+
+      tr {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      /* td:nth-child(odd) {
+        font-weight: bold;
+      } */
+
+      /* td:last-child {
+        border-bottom: 1px solid #000;
+      } */
+    }
+  </style>
+    <style>
         body {
             font-family: 'Poppins', sans-serif;
         }
@@ -123,8 +164,10 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <h1 class="display-4 hero-text">We Bring<br><span>Trending Concept</span> To Reality</h1>
-                    <p class="mt-3"><b class="text-green">100% Assured Quality</b> on Buildings & Our Services<br>
-                        with skilled and dedicated teams
+                    <p class="mt-3"><b class="text-green fs-5">100% Assured Quality</b> on Buildings & Our Services<br>
+                        with skilled and professional managements.
+                    </p>
+                    <p class="mt-3"><b class="text-green fs-5">உங்க வீட்டுக்கு நாங்க கேரண்டி!!!</b> 
                     </p>
                     <form class="d-flex">
                     <a href="tel:+918940104441" class="btn btn-light">Contact Us</a>
@@ -150,14 +193,14 @@
       <div class="col-md-6">
         <h2 class="display-4 fw-bold mb-4">About Us</h2>
         <p class="lead mb-4">
-        With a legacy dating back to 2004, we have spent over two decades turning dreams into reality by creating beautiful homes for clients who trust us with their vision.<br>
+        With a legacy since 1993, we have spent over two generations turning dreams into reality by creating beautiful homes for clients who trust us with their vision.<br>
         Our extensive portfolio highlights numerous successful projects, combining innovative design with seamless construction to deliver exceptional results.
         </p>
         <ul class="list-unstyled mb-4">
-          <li><i class="bi bi-check-circle-fill"></i> Proven Expertise in Design and Construction</li>
-          <li><i class="bi bi-check-circle-fill"></i> Commitment to Uncompromising Quality</li>
-          <li><i class="bi bi-check-circle-fill"></i> Innovation in Design and Construction Techniques</li>
-          <li><i class="bi bi-check-circle-fill"></i> Client-centric approach</li>
+          <li><i class="bi bi-check-circle-fill text-green"></i> Proven Expertise in Design and Construction</li>
+          <li><i class="bi bi-check-circle-fill text-green"></i> Commitment to Uncompromising Quality</li>
+          <li><i class="bi bi-check-circle-fill text-green"></i> Innovation in Design and Construction Techniques</li>
+          <li><i class="bi bi-check-circle-fill text-green"></i> Client-centric approach</li>
         </ul>
         
       </div>
@@ -288,8 +331,8 @@
     <!-- Image Cards -->
     <div class="row justify-content-center">
         <div class="col-md-3 mb-4">
-            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal1">
-                <img src="Assets/projects/13.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal3">
+                <img src="Assets/projects/15.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
                 
             </div>
         </div>
@@ -300,11 +343,12 @@
             </div>
         </div>
         <div class="col-md-3 mb-4">
-            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal3">
-                <img src="Assets/projects/15.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal1">
+                <img src="Assets/projects/13.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
                 
             </div>
         </div>
+        
         <div class="col-md-3 mb-4">
             <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal4">
                 <img src="Assets/projects/8.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
@@ -322,17 +366,22 @@
             </div>
         </div>
         <div class="col-md-3 mb-4">
-            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal6">
-                <img src="Assets/projects/16.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
-                
+            <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal14">
+                <img src="Assets/projects/24.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <p class="card-text fw-bold">Individual Residential Buildings - Salem</p>
+                </div>
             </div>
         </div>
         <div class="col-md-3 mb-4">
-            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal7">
-                <img src="Assets/projects/17.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
-                
+            <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal15">
+                <img src="Assets/projects/12.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <p class="card-text fw-bold">Demolishing & Plot Leveling Work - </p>
+                </div>
             </div>
         </div>
+        
         <div class="col-md-3 mb-4">
             <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal8">
                 <img src="Assets/projects/18.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
@@ -374,19 +423,15 @@
             </div>
         </div>
         <div class="col-md-3 mb-4">
-            <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal14">
-                <img src="Assets/projects/24.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
-                <div class="card-body text-center d-flex flex-column justify-content-between">
-                    <p class="card-text fw-bold">Individual Residential Buildings - Salem</p>
-                </div>
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal6">
+                <img src="Assets/projects/16.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
             </div>
         </div>
         <div class="col-md-3 mb-4">
-            <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal15">
-                <img src="Assets/projects/12.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
-                <div class="card-body text-center d-flex flex-column justify-content-between">
-                    <p class="card-text fw-bold">Demolishing & Plot Leveling Work - </p>
-                </div>
+            <div class="card border-0 h-auto" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal7">
+                <img src="Assets/projects/17.jpg" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
+                
             </div>
         </div>
         <div class="col-md-3 mb-4">
@@ -401,14 +446,14 @@
                
             </div>
         </div>
-        <div class="col-md-3 mb-4">
+        <!-- <div class="col-md-3 mb-4">
             <div class="card border-0 h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#carouselModal18">
                 <img src="Assets/projects/26.png" class="card-img-top img-fluid rounded" alt="Project Image" style="width: 100%; height: 200px; object-fit: cover;">
                 <div class="card-body text-center d-flex flex-column justify-content-between">
                     <p class="card-text fw-bold">Interiors</p>
                 </div>
             </div>
-        </div>
+        </div> -->
         
     </div>
 </div>
@@ -809,7 +854,7 @@
             </div>
             <div class="col-md-6">
                 <h2 class="fw-bold">Why Choose Us?</h2>
-                <p class="green">We are the friendly & respectfull organisation. We provide budget friendly houses & building with 100% Quality Assurance.</p>
+                <p class="green">We are the pleasant & friendly organization. We offer affordable houses and constructions with 100% Quality Assurance.</p>
                 <p class="green">We link your thoughts with our trending & innovative ideas.</p>
                 <!-- <ul class="list-group border-0">
                     <li class="list-group-item border-0 ps-0"><strong>Expert Craftsmanship</strong> – Skilled professionals delivering exceptional quality in every project.</li>
@@ -833,23 +878,23 @@
                     <h6 class="fw-bold">Email</h6>
                     <p><a href="mailto:welcome@everhomesconstruction.com" class="link-light text-decoration-none">welcome@everhomesconstruction.com</a></p>
                     <h6 class="fw-bold">Phone</h6>
-                    <a href="tel:+918940104441" class="link-light text-decoration-none">+91 89401 04441,</a>
+                    <a href="tel:+918940104441" class="link-light text-decoration-none">+91 89401 04441</a><br>
                     <a href="tel:+918015223441" class="link-light text-decoration-none">+91 80152 23441</a>
                 </div>
 
                 <div class="col-md-6">
-                    <form action="#" method="POST">
+                    <form action="send_mail.php" method="POST">
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Full Name" required>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email" required>
+                            <input type="email" id="email" name="email"  class="form-control" placeholder="Email" required>
                         </div>
                         <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number" pattern="[0-9]{10}" required>
                         </div>
                         <div class="mb-3">
-                            <select class="form-control" required>
+                            <select class="form-control" id="service" name="service" required>
                                 <option value="" disabled selected>Select a Service</option>
                                 <optgroup label="Services">
                                     <option value="individual-buildings">Individual Residential Buildings</option>
@@ -864,7 +909,7 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                            <textarea class="form-control" id="comments" name="comments" rows="5" placeholder="Message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-success w-100">Send Message</button>
                     </form>
@@ -883,7 +928,7 @@
 
     <div class="row g-5">
       <!-- Construction Keywords -->
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="card h-100 border-0 shadow-sm">
           <div class="card-body">
             <div class="d-flex align-items-center mb-3">
@@ -892,15 +937,66 @@
               </div>
               <h4 class="ms-3 mb-0 text-success">Construction Services</h4>
             </div>
-            <p class="card-text mt-3 text-justify-custom">
-              Building Construction, Contractors, Builders, Construction Company, Residential Apartment Construction, Remodeling, House Alterations, Building Alterations, Construction Management, General Contractors, Construction Worker, Construction Materials, Construction Site, Building Contractor, New Construction, House Building, Construction Consulting, Commercial Projects, Building Projects, Residential Construction, Steel Structure, Steel Building, Steel Construction, 2D Planning, 3D Elevation, 3D Design, Commercial Complex, Commercial Structure, Construction in salem, Builders in salem, Building contraction in salem, Building consulting in salem.
-            </p>
+           
+            <table>
+    <tr>
+      <td>Building Construction</td>
+      <td>Contractors</td>
+      <td>Builders</td>
+      <td>Construction Company</td>
+    </tr>
+    <tr>
+      <td>Residential Apartment Construction</td>
+      <td>Remodeling</td>
+      <td>House Alterations</td>
+      <td>Building Alterations</td>
+    </tr>
+    <tr>
+      <td>Construction Management</td>
+      <td>General Contractors</td>
+      <td>Construction Worker</td>
+      <td>Construction Materials</td>
+    </tr>
+    <tr>
+      <td>Construction Site</td>
+      <td>Building Contractor</td>
+      <td>New Construction</td>
+      <td>House Building</td>
+    </tr>
+    <tr>
+      <td>Construction Consulting</td>
+      <td>Commercial Projects</td>
+      <td>Building Projects</td>
+      <td>Residential Construction</td>
+    </tr>
+    <tr>
+      <td>Steel Structure</td>
+      <td>Steel Building</td>
+      <td>Steel Construction</td>
+      <td>2D Planning</td>
+    </tr>
+    <tr>
+      <td>3D Elevation</td>
+      <td>3D Design</td>
+      <td>Commercial Complex</td>
+      <td>Commercial Structure</td>
+    </tr>
+    <tr>
+      <td>Construction in Salem</td>
+      <td>Builders in Salem</td>
+      <td>Building contraction in Salem</td>
+      <td>Building consulting in Salem</td>
+    </tr>
+  </table>
+
+
+            
           </div>
         </div>
       </div>
 
       <!-- Interior Keywords -->
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="card h-100 border-0 shadow-sm">
           <div class="card-body">
             <div class="d-flex align-items-center mb-3">
@@ -910,7 +1006,22 @@
               <h4 class="ms-3 mb-0 text-success">Interior Services</h4>
             </div>
             <p class="card-text mt-3 text-justify-custom">
-              Interior Design, Interior Decoration, Modular Kitchen, Cupboard Design, Wardrobe Design, Kitchen Basket, Tandem Box, Inside Decorating.
+            <table>
+    <tr>
+      <td>Interior Design</td>
+      <td>Interior Decoration</td>
+      <td>Modular Kitchen</td>
+      <td>Cupboard Design</td>
+      <td>Wardrobe Design</td>
+      <td>Kitchen Basket</td>
+      <td>Tandem Box</td>
+    </tr>
+    <tr>
+      
+      
+      <td>Inside Decorating</td>
+    </tr>
+  </table>
             </p>
           </div>
         </div>
@@ -931,10 +1042,10 @@
                     <a href="mailto:welcome@everhomesconstruction.com" class="text-light ms-4">
                         <i class="bi bi-envelope-fill" style="font-size: 1.5rem;"></i>
                     </a>
-                    <a href="#" class="text-light ms-3">
+                    <a href="https://www.facebook.com/profile.php?id=61571949212883&mibextid=ZbWKwL" class="text-light ms-3" target="_blank">
                         <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
                     </a>
-                    <a href="#" class="text-light ms-3">
+                    <a href="https://www.instagram.com/rbala_ramanan?igsh=MW45dTUzMWRzYjZtbw==" class="text-light ms-3" target="_blank">
                         <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
                     </a>
                 </div>
